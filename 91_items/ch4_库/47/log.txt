@@ -1,0 +1,20 @@
+2021-04-09 19:33:45,742 logger_test.py[line:41] DEBUG Information during calling f():
+2021-04-09 19:33:45,742 logger_test.py[line:17] INFO calling method g() in f()
+2021-04-09 19:33:45,742 logger_test.py[line:22] INFO calling method h() in g()
+2021-04-09 19:33:45,742 logger_test.py[line:27] INFO Delete element in gList in h()
+2021-04-09 19:33:45,742 logger_test.py[line:29] INFO Append element i to gList in i()
+2021-04-09 19:33:45,742 logger_test.py[line:35] INFO Append element i to gList in i()
+2021-04-09 19:33:45,743 logger_test.py[line:53] ERROR [ERROR]:Sorry, Exception occured, out of range
+2021-04-09 19:33:45,743 logger_test.py[line:54] CRITICAL object info:list index out of range
+2021-04-09 19:33:45,743 logger_test.py[line:56] CRITICAL Error Type:<class 'IndexError'>, Error information:list index out of range
+2021-04-09 19:33:45,743 logger_test.py[line:57] CRITICAL   File "logger_test.py", line 48, in <module>
+    f()
+  File "logger_test.py", line 18, in f
+    return g()
+  File "logger_test.py", line 23, in g
+    return h()
+  File "logger_test.py", line 30, in h
+    gList.append(i())
+  File "logger_test.py", line 37, in i
+    print(gList[7])
+
